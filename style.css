@@ -1,0 +1,150 @@
+@font-face {
+  font-family: roboto;
+  src: url(roboto.ttf);
+}
+
+*{
+	margin: 0;
+}
+body,html{
+	background: #004f71;
+	color: #fff;
+	height: 100%;
+	font-family: roboto;
+	font-size: 1.2rem
+}
+
+.wrapper{
+	height: auto;
+	padding: 20px;
+	width: 30%;
+	margin: 0 auto;
+	background: #004f71;
+}
+
+.add-container{
+	display: grid;
+	grid-template-columns: 80% auto;
+	border-radius: 10px;
+	overflow: hidden;
+	margin: 20px 0 10px 0;
+}
+
+h1{
+	text-align: center;
+}
+
+input#goal{
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+input#goal:focus{
+	outline: none;
+}
+
+input#btn{
+	font-weight: bold;
+	padding: 10px;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	background: #ffb700;
+	color: #fff;
+	transition: .3s;	
+}
+
+input#btn:hover{
+	background: rgba(0,0,0,.5);
+	color: #ffb700	;
+}
+
+#goals-container{
+	display: block;
+}
+
+#goals-container div{
+	border-radius: 10px !important;
+	overflow: hidden;
+	margin: 10px 0;
+	display: grid;
+	grid-template-columns: 85% auto;
+}
+
+#goals-container div p,span{
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+	background: #ffb700;
+	color: #333;
+	transition: .3s;
+}
+
+#goals-container span{
+	text-align: center;
+	background: #fff;
+}
+
+#goals-container span:hover{
+	background: rgba(0,0,0,.5);
+	color: #ffb700;
+}
+
+#goals-container p:hover{
+	background: rgba(0,0,0,.5);
+	color: #ffb700;
+	text-decoration: line-through;
+}
+
+
+#completed-container{
+	display: block;
+}
+
+#completed-container div{
+	border-radius: 10px !important;
+	overflow: hidden;
+	margin: 10px 0;
+	display: grid;
+	grid-template-columns: 85% auto;
+}
+
+#completed-container div p,span{
+	cursor: pointer;
+	display: block;
+	padding: 10px;
+	background: #ffb700;
+	color: #333;
+	transition: .3s;
+}
+
+#completed-container span{
+	text-align: center;
+	background: #fff;
+}
+
+#completed-container p{
+	text-decoration: line-through;
+}
+
+#completed-container span:hover{
+	background: rgba(0,0,0,.5);
+	color: #ffb700;
+}
+
+#completed-container p:hover{
+	background: rgba(0,0,0,.5);
+	color: #ffb700;
+	text-decoration: line-through;
+}
+
+
+
+@media only screen and (max-width: 768px){
+	.wrapper{
+		width: auto;
+	}
+	body{
+		font-size: medium;
+	}
+}
